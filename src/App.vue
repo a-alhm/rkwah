@@ -12,7 +12,6 @@
           contain
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
           transition="scale-transition"
-          width="40"
         />
 
         <v-img
@@ -36,7 +35,16 @@
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar> -->
-
+      <v-row class="text-center" style="background-color: white;">
+      <v-col cols="12">
+        <v-img
+          :src="require('./assets/logo.png')"
+          class="my-3"
+          contain
+          height="300"
+        />
+      </v-col>
+    </v-row>
     <v-main class="bg font">
         <router-view></router-view>
     </v-main>
@@ -56,7 +64,15 @@ export default {
 
 <style>
 .bg {
-  background-color: #efeff0;
+  background-color: rgb(182 235 251);
+
+    /* Full height */
+  /* height: 100%; */
+
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 .font{
   color: #0e0c0c;

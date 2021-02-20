@@ -5,10 +5,6 @@ import talent from '../components/talent.vue'
 import expert from '../components/expert.vue'
 import investor from '../components/investor.vue'
 import options from '../components/options.vue'
-import optionsInv from '../components/optionsInv.vue'
-import optionsExper from '../components/optionsExper.vue'
-import form from '../components/form.vue'
-
 
 
 
@@ -18,21 +14,6 @@ const routes = [
   {
     path:"*",
     redirect: "/"
-  },
-  {
-    path:"/monitoring",
-    name: 'monitoring',
-    component: optionsExper
-  },
-  {
-    path:"/form",
-    name: 'form',
-    component: form
-  },
-  {
-    path:"/Invest",
-    name: 'Invest',
-    component: optionsInv
   },
   {
     path:"/options",
